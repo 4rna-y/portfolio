@@ -25,6 +25,5 @@ function onLoad()
     {
         onHomeLoad();
     }
-
 }
 

@@ -1,0 +1,9 @@
+{
+    "lang": ["kotlin", "papermc"],
+    "content": [
+        "### MineKart",
+        "Minecraft Paperサーバー用プラグイン",
+        "防具立てを用いたゴーカートを追加する。",
+        "リソースパックとOptifineを用いたCEM(カスタムエンティティモデル)で防具立てをゴーカートに変更する。"
+    ]
+}

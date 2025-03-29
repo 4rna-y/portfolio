@@ -1,0 +1,80 @@
+{
+    "title": "Wicked Esports Website",
+    "img": "wicked_website.png",
+    "lang": ["html", "css", "typescript"],
+    "content": [
+        {
+            "content": [
+                "Esportsチーム Wicked のWebサイト。"
+            ],
+            "grid": false
+        },
+        {
+            "content": [
+                "### 使用技術",
+                "- Webpack",
+                "- Anime.js",
+                "- Google Forms",
+                "- Google Apps Script",
+                "- Github Pages"
+            ],
+            "grid": true
+        },
+        {
+            "content": [
+                "### 機能",
+                "- Jsonファイルからニュース記事を動的挿入する機能",
+                "- Google Formsを用いた問い合わせフォーム",
+                "- Google Apps Scriptを用いた問い合わせフォームの自動返信機能"
+            ],
+            "grid": true
+        },
+        {
+            "content":  [
+                "### 開発期間",
+                "- 約４週間"
+            ],
+            "grid": true
+        },
+        {
+            "content": [
+                "### 工夫点",
+                "- デザイン",
+                "依頼主からの要望で「シンプルなデザイン」を意識し、白と黒を基調にアクセントカラーとして紫を取り入れることで、クールで落ち着いた印象に仕上げました。",
+                "- ユーザー体験を意識したアニメーション",
+                "Anime.jsを活用し、マウスホバー時のエフェクトやページ遷移時のスムーズなアニメーションを実装。視覚的に心地よい動きを意識して、ユーザーの操作感を向上させました。"
+            ],
+            "grid": false
+        }
+    ],
+    "gallery": [
+        {
+            "img": "wicked_website.png",
+            "title": "トップページ"
+        },
+        {
+            "img": "wicked_website_1.png",
+            "title": "スポンサーページ"
+        },
+        {
+            "img": "wicked_website_2.png",
+            "title": "Aboutページ"
+        },
+        {
+            "img": "wicked_website_3.png",
+            "title": "コンタクトページ"
+        }
+    ],
+    "links": [
+        {
+            "type": "github",
+            "label": "Source",
+            "link": "https://github.com/wicked-esports/website"
+        },
+        {
+            "type": "website",
+            "label": "Website",
+            "link": "https://wicked-esports.com"
+        }
+    ]
+}

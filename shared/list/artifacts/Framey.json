@@ -1,0 +1,8 @@
+{
+    "lang": ["cslogo"],
+    "content": [
+        "### Framey",
+        "WPF (Windows Presentation Foundation)用のシンプルな2Dゲームライブラリ",
+        "WPF上で図形や画像を垂直同期で表示し、アニメーションさせることができる。"
+    ]
+}

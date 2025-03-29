@@ -1,0 +1,356 @@
+:root
+{
+    --work-popup-area-height: 25%;
+    --work-title-size: 2.5rem;
+    --work-markdown-margin-top: 10px;
+    --md-content-size: 1rem;
+    --footer-height: 200px;
+    --footer-button-icon-size: 80%;
+    --footer-button-text-size: 1.15rem;
+    --footer-button-size: 50px;
+    --gallery-img-button-img-size: 3.5%;
+    --md-content-grid: 2; 
+}
+
+body
+{
+    margin: 0;
+    padding: 0;
+}
+
+@media (max-width: 480px)
+{
+    :root
+    {
+        --work-title-size: 1.5rem;
+        --work-markdown-margin-top: 0;
+        --work-popup-area-height: 27.5%;;
+        --md-content-size: 1rem;
+        --footer-button-icon-size: 60%;
+        --footer-button-text-size: 1rem;
+        --footer-button-size: 40px;
+        --gallery-img-button-img-size: 7.5%;
+        --md-content-grid: 2;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px)
+{
+    :root
+    {
+        --work-title-size: 1.75rem;
+        --work-markdown-margin-top: 0;
+        --work-popup-area-height: 27.5%;
+        --md-content-size: 1.1rem;
+        --footer-button-icon-size: 60%;
+        --footer-button-text-size: 1.05rem;
+        --footer-button-size: 40px;
+        --gallery-img-button-img-size: 6%;
+        --md-content-grid: 2;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px)
+{
+    :root
+    {
+        --work-title-size: 2rem;
+        --work-markdown-margin-top: 0;
+        --work-popup-area-height: 27.5%;
+        --md-content-size: 1.2rem;
+        --footer-button-icon-size: 60%;
+        --footer-button-text-size: 1.05rem;
+        --footer-button-size: 40px;
+        --gallery-img-button-img-size: 5%;
+        --md-content-grid: 2;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1280px)
+{
+    :root
+    {
+        --work-title-size: 2.5rem;
+        --work-markdown-margin-top: 0;
+        --work-popup-area-height: 27.5%;
+        --md-content-size: 1.1rem;
+        --footer-button-icon-size: 60%;
+        --footer-button-text-size: 1.05rem;
+        --footer-button-size: 45px;
+        --gallery-img-button-img-size: 4%;
+        --md-content-grid: 1;
+    }
+}
+
+@media (min-width: 1281px) and (max-width: 1440px)
+{
+    :root
+    {
+        --work-title-size: 2.5rem;
+        --work-markdown-margin-top: 0;
+        --work-popup-area-height: 27.5%;
+        --md-content-size: 1.25rem;
+        --footer-button-icon-size: 65%;
+        --footer-button-text-size: 1.05rem;
+        --footer-button-size: 50px;
+        --gallery-img-button-img-size: 3.5%;
+        --md-content-grid: 1;
+    }
+}
+
+@media (min-width: 1441px)
+{
+    :root
+    {
+        --work-title-size: 2.5rem;
+        --work-markdown-margin-top: 0;
+        --work-popup-area-height: 27.5%;
+        --md-content-size: 1.25rem;
+        --footer-height: 200px;
+        --footer-button-icon-size: 65%;
+        --footer-button-text-size: 1.15rem;
+        --footer-button-size: 50px;
+        --gallery-img-button-img-size: 3.5%;
+        --md-content-grid: 1;
+    }
+}
+
+#main-content
+{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container
+{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#work-img
+{
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    z-index: -1;
+}
+
+#work-img-popup
+{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 1) 25%, rgba(0, 0, 0, 0.5));
+    backdrop-filter: blur(3px);
+    display: flex;
+    align-items: end;
+}
+
+#work-img-popup-area
+{
+    width: 100%;
+    height: var(--work-popup-area-height);
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+#work-title
+{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 5%;
+    font-family: "Zen Kaku Gothic Antique";
+    font-weight: 500;
+    font-size: var(--work-title-size);
+}
+
+#work-using-lang
+{
+    margin-left: 5%;
+    
+}
+
+.work-using-lang-icon
+{
+    width: var(--work-title-size);
+    margin: 0 0.5%;
+}
+
+#md-container
+{
+    z-index: 1;
+    margin-top: var(--work-markdown-margin-top);
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.md-content
+{
+    margin-top: 10px;
+    font-family: "Zen Kaku Gothic Antique";
+    font-size: var(--md-content-size);
+    font-weight: 400;
+    grid-column: span var(--md-content-grid);
+    & > p
+    {
+        margin: 10px 0;
+    }
+    & > h1
+    {
+        margin: 5px 0;
+    }
+    & > h2
+    {
+        margin-top: 15px;
+        margin-bottom: 0;
+    }
+}
+
+.md-nowrap
+{
+    grid-column: span 2;
+}
+
+#work-gallery-container
+{
+    margin: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#work-gallery-carousel-container
+{
+    width: 80%;
+    aspect-ratio: 16 / 9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+#work-gallery-img-container
+{
+    width: 100%;
+    aspect-ratio: 16 / 9;
+}
+
+.work-gallery-img
+{
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    margin: 0px;
+    cursor: pointer;
+    z-index: 1;
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+#pagenation-container
+{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pagenation-dot
+{
+    width: 7px;
+    height: 7px;
+    border-radius: 100%;
+    background-color: #BEBFC5;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.pagenation-dot:nth-child(1)
+{
+    background-color: #000000;
+}
+
+#work-gallery-img-title
+{
+    margin-top: 10px;
+    font-family: "Zen Kaku Gothic Antique";
+    font-weight: 400;
+    font-size: 1rem;
+    margin-bottom: 0;
+}
+
+#footer-container
+{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#footer-separate-line
+{
+    margin: 20px;
+    border: 1px solid #BEBFC5;
+    border-style: solid none none none;
+    width: 85%;
+}
+
+#footer-button-container
+{
+    margin: 10px 10px;
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.footer-button
+{
+    margin: 0 7.5px;
+    width: var(--footer-button-size);
+    height: var(--footer-button-size);
+    border-radius: 100%;
+    border: 1px solid #BEBFC5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.textable-button
+{
+    width: fit-content;
+    padding: 0 7.5px;
+    border-radius: 32px;
+    
+}
+
+.textable-button-text
+{
+    font-family: "Zen Kaku Gothic Antique";
+    font-size: var(--footer-button-text-size);
+    font-weight: 400;
+    margin: 0 10px;
+}
+
+.footer-button-img
+{
+    width: var(--footer-button-icon-size);
+    height: var(--footer-button-icon-size);
+}
+
+.img-reverse
+{
+    rotate: 180deg;
+}

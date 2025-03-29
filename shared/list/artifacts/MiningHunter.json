@@ -1,0 +1,9 @@
+{
+    "lang": ["kotlin", "papermc"],
+    "content": [
+        "### MiningHunter",
+        "Minecraft Paperサーバー用プラグイン",
+        "鉱石を採掘すると、さまざまなアクションがランダムに発生する。",
+        "鉱石を採掘してポイントを獲得し、競争する。"
+    ]
+}

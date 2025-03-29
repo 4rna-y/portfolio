@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./shared/css/index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Zen+Kaku+Gothic+Antique:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+
+        <title>Portfolio</title>
+    </head>
+    <body>
+        <header>
+            <div id="header-nav">
+                <p class="header-nav-text">Works</p>
+                <p class="header-nav-text">Artifacts</p>
+                <p class="header-nav-text">Profile</p>
+            </div>
+        </header>
+        <div id="main-content">
+            <div class="container" id="works">
+                <p class="container-label">Works</p>
+                
+            </div>
+            <div class="container">
+                <p class="container-label">Artifacts</p>
+                <div id="artifacts-container">
+                    
+                </div> 
+            </div>
+            <div class="container">
+                <p class="container-label">Profile</p>
+                <div id="profile-header-container">
+                    <img id="profile-header-icon" src="./shared/img/icon_1.jpg">
+                    <div id="profile-header-name-container">
+                        <p id="profile-header-name">Kyota / 4rnay</p>
+                        <p id="profile-header-birth">C# / Full-Stack Engineer</p>
+                        <p id="profile-header-birth">2005 / 11 / 1</p>
+                    </div>
+                </div>
+                <div id="profile-lang-container">
+                    <div class="profile-lang-item">
+                        <div class="profile-lang">
+                            <img class="profile-lang-icon" src="./shared/icon/cslogo.svg">
+                            <p class="profile-lang-text">C#</p>
+                        </div>
+                        <p class="profile-description-text">GUIアプリケーション(WPF・Avalonia), クロスプラットフォームのコンソールアプリ, DiscordBot</p>
+                    </div>
+                    <div class="profile-lang-item">
+                        <div class="profile-lang">
+                            <img class="profile-lang-icon" src="./shared/icon/html.svg">
+                            <p class="profile-lang-text">HTML</p>
+                        </div>
+                        <p class="profile-description-text">フルスクラッチでのフロントエンド開発</p>
+                    </div>
+                    <div class="profile-lang-item">
+                        <div class="profile-lang">
+                            <img class="profile-lang-icon" src="./shared/icon/typescript.svg">
+                            <p class="profile-lang-text">TypeScript</p>
+                        </div>
+                        <p class="profile-description-text">NestJsやPrismaなどを用いたバックエンド開発</p>
+                    </div>
+                    <div class="profile-lang-item">
+                        <div class="profile-lang">
+                            <img class="profile-lang-icon" src="./shared/icon/kotlin.svg">
+                            <p class="profile-lang-text">Kotlin</p>
+                        </div>
+                        <p class="profile-description-text">Minecraftプラグイン</p>
+                    </div>
+                    <div class="profile-lang-item">
+                        <div class="profile-lang">
+                            <img class="profile-lang-icon" src="./shared/icon/unity.svg">
+                            <p class="profile-lang-text">Unity</p>
+                        </div>
+                        <p class="profile-description-text">3D、2Dゲーム製作、プログラミングスクール講師</p>
+                    </div>
+                </div>
+
+                <div id="profile-button-container">
+                    <div class="button textable-button">
+                        <img class="button-img" src="./shared/icon/github.svg">
+                        <a class="textable-button-text" href="https://github.com/4rna-y">Github</a>
+                    </div>
+                    <div class="button textable-button">
+                        <img class="button-img" src="./shared/icon/email.svg">
+                        <a class="textable-button-text" href="./contact">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div id="hamburger-button">
+            <img id="hamburger-line-img" src="./shared/icon/hamburger_line.svg">
+        </div>
+        <div id="side-menu-curtain"></div>
+        <div id="side-menu">
+            <div class="side-menu-item">
+                <img id="side-menu-dismiss-icon" src="./shared/icon/arrow_head.svg">
+            </div>
+            <div class="side-menu-item">
+                <p class="side-menu-text" id="works">Works</p>
+            </div>
+            <div class="side-menu-item">
+                <p class="side-menu-text" id="artifacts">Artifacts</p>
+            </div>
+            <div class="side-menu-item">
+                <p class="side-menu-text" id="profile">Profile</p>
+            </div>
+        </div>
+        
+        <script src="./dist/bundle.js"></script>
+    </body>
+</html>

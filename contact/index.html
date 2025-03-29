@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../shared/css/contact.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Zen+Kaku+Gothic+Antique:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+
+        <title>Contact</title>
+    </head>
+    <body>
+        <div id="main-content">
+            <div id="header-container">
+                <a href="../" id="header-back-button">
+                    <img id="header-back-button-img" src="../shared/icon/arrow_head.svg">
+                </a>
+                <p id="header-title">Contact</p>
+            </div> 
+            <div class="container"> 
+                <form id="contact-form" name="contact-form">
+                    <div class="contact-entry-item">
+                        <p class="contact-entry-label">お名前</p>
+                        <input class="contact-entry-input" name="entry.501347372" type="text" placeholder="お名前・組織名" required>
+                    </div>
+                    <div class="contact-entry-item">
+                        <p class="contact-entry-label">メールアドレス</p>
+                        <input class="contact-entry-input" name="entry.467611884" type="email" placeholder="example@example.com" required>
+                    </div>
+                    <div class="contact-entry-item">
+                        <p class="contact-entry-label">お問い合わせ内容</p>
+                        <textarea class="contact-entry-input" name="entry.1933651783" required></textarea>
+                    </div>
+                    <div class="contact-entry-item">
+                        <input class="contact-entry-input" id="contact-submit-button"  type="submit" required>
+                    </div>
+                </form>
+                <div id="result-container">
+                    <p id="result-text">正常に送信されました。</p>
+                </div>
+            </div>
+        </div>
+        <script src="../dist/bundle.js"></script>
+    </body>
+</html>

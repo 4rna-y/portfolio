@@ -1,0 +1,8 @@
+{
+    "lang": ["kotlin", "papermc"],
+    "content": [
+        "### FastToDie",
+        "Minecraft Paperサーバー用プラグイン",
+        "プレイヤーの動作を監視し、速い行動をすると死亡する。"
+    ]
+}

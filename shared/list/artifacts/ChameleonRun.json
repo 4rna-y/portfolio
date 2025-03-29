@@ -1,0 +1,8 @@
+{
+    "lang": ["cslogo", "unity"],
+    "content": [
+        "### ChameleonRun",
+        "スマホゲーム「ChameleonRun」をオマージュしたUnityゲーム。",
+        "DoTweenを用いたUIアニメーションやPostFXを用いた臨場感のあるグラフィックに仕上げている。"
+    ]
+}

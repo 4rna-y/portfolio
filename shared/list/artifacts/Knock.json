@@ -1,0 +1,9 @@
+{
+    "lang": ["cslogo"],
+    "content": [
+        "### Knock",
+        "Minecraftサーバーの構築・管理を行うDiscordBot",
+        "基本的なサーバーの操作に加え、アドオンの導入も容易にDiscord上で行える。",
+        "Knock.ClusterクライアントをLinuxサーバー上で別途起動し、DiscordBotとWebSocketで通信しサーバーの構築・管理を行う。"
+    ]
+}

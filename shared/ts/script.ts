@@ -16,6 +16,7 @@ function onLoad()
     {
         onArtifactsLoad();
     }
+    else
     if (window.location.pathname.startsWith("/contact"))
     {
         onContactLoad();

@@ -1,0 +1,9 @@
+{
+    "lang": ["kotlin", "papermc"],
+    "content": [
+        "### Amalib",
+        "Minecraft Paperプラグイン用のユーティリティライブラリ",
+        "独自の軽量なDependency Injectionシステムや",
+        "容易にコマンドを登録できる独自のコマンドシステムなどを提供する",
+    ]
+}
